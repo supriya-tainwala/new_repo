@@ -1,6 +1,8 @@
 ## this is readme file which you can follow for cloning your gibhub repo at your local by entering linux commands at terminal
 **1.** open the terminal
-...
+'''terminal
+ctrl+t
+'''
 
 **2.** Make a directory where you have to clone your repo by using a command
 ...terminal
