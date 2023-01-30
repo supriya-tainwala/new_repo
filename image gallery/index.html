@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Image Upload Preview</title>
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer">
+
+        <img id="camera" src="./asset/images/camera.png">
+        <img id="boy" src="./asset/images/boy1.png">
+        <img id="memory" src="./asset/images/mem.png">
+    
+    
+        <button id="fav_btn1" onclick="openPopup()">THANKS</button>
+
+    
+    
+        <div class="center_div">
+            
+         
+            <div class="container " id="container-main">
+                <input type="file" id="file-input" accept="image/png, image/jpeg" onchange="preview()" multiple>
+                <label id="Choose" for="file-input">
+                    <i class="fas fa-upload"></i> &nbsp; Choose A Photo
+                </label>
+                <p id="num-of-files">No Files Chosen</p>
+                <div id="images"></div>
+            </div>
+          <button type="submit" class="btn" onclick="preview()">Upload</button>
+          <div class="popup" id="popup">
+            <img src="./asset/images/tick.png">
+            <h2>Thank You</h2>
+            <p>Your selected image has been successfully submitted.Thanks!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+          </div>
+        </div>
+    
+        <div class="first">
+          <div class="first1"></div>
+          <div class="first2"></div>
+        </div>
+        <div class="sec">
+          <div class="sec1"></div>
+          <div class="sec2"></div>
+        </div>
+      </div>
+
+
+   
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>
