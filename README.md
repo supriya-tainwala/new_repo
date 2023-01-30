@@ -1,7 +1,7 @@
 ## this is readme file which you can follow for cloning your gibhub repo at your local by entering linux commands at terminal
 **1.** press following command on your system.
 ,,,
-   termnal
+   terminal
 ctrl+t
 ,,,
 
