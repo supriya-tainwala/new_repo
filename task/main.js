@@ -13,10 +13,10 @@ function onFormSubmit() {
 
 function readFormData() {
     var formData = {};
-    formData["fullName"] = document.getElementById("fullName").value;
-    formData["empCode"] = document.getElementById("empCode").value;
-    formData["salary"] = document.getElementById("salary").value;
-    formData["city"] = document.getElementById("city").value;
+    formData["productName"] = document.getElementById("productName").value;
+    formData["brand"] = document.getElementById("brand").value;
+    formData["quantity"] = document.getElementById("quantity").value;
+    formData["rate"] = document.getElementById("rate").value;
     return formData;
 }
 
@@ -37,25 +37,25 @@ function insertNewRecord(data) {
 }
 
 function resetForm() {
-    document.getElementById("fullName").value = "";
-    document.getElementById("empCode").value = "";
-    document.getElementById("salary").value = "";
-    document.getElementById("city").value = "";
+    document.getElementById("productName").value = "";
+    document.getElementById("brand").value = "";
+    document.getElementById("quantity").value = "";
+    document.getElementById("rate").value = "";
     selectedRow = null;
 }
 
 function onEdit(td) {
     selectedRow = td.parentElement.parentElement;
-    document.getElementById("fullName").value = selectedRow.cells[0].innerHTML;
-    document.getElementById("empCode").value = selectedRow.cells[1].innerHTML;
-    document.getElementById("salary").value = selectedRow.cells[2].innerHTML;
-    document.getElementById("city").value = selectedRow.cells[3].innerHTML;
+    document.getElementById("productName").value = selectedRow.cells[0].innerHTML;
+    document.getElementById("brand").value = selectedRow.cells[1].innerHTML;
+    document.getElementById("quantity").value = selectedRow.cells[2].innerHTML;
+    document.getElementById("rate").value = selectedRow.cells[3].innerHTML;
 }
 function updateRecord(formData) {
-    selectedRow.cells[0].innerHTML = formData.fullName;
-    selectedRow.cells[1].innerHTML = formData.empCode;
-    selectedRow.cells[2].innerHTML = formData.salary;
-    selectedRow.cells[3].innerHTML = formData.city;
+    selectedRow.cells[0].innerHTML = formData.productName;
+    selectedRow.cells[1].innerHTML = formData.brand;
+    selectedRow.cells[2].innerHTML = formData.quantity;
+    selectedRow.cells[3].innerHTML = formData.rate;
 }
 
 function onDelete(td) {
@@ -67,7 +67,7 @@ function onDelete(td) {
 }
 function validate() {
     isValid = true;
-    if (document.getElementById("fullName").value == "") {
+    if (document.getElementById("productName").value == "") {
         isValid = false;
         document.getElementById("fullNameValidationError").classList.remove("hide");
     } else {
