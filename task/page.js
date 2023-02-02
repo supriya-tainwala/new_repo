@@ -18,6 +18,8 @@ function validate() {
     var Username = document.getElementById("user");
     if (password.value === "12345678" && Username.value == "admin") {
         alert("login is seccesfull");
+        sessionStorage.setItem("key",1234)
+
         window.location.replace("addInvantory.html");
         return false;
     }

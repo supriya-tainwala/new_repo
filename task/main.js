@@ -1,3 +1,7 @@
+if(!sessionStorage.getItem("key")){
+    location.replace("./login.html")
+}
+
 var selectedRow = null
 
 function onFormSubmit() {
@@ -78,3 +82,10 @@ function validate() {
     return isValid;
 }
 
+
+let logout = document.querySelector(".logout_btn");
+logout.onclick = ()=>{
+        sessionStorage.removeItem("key");
+        location.replace("./login.html");
+        
+}
