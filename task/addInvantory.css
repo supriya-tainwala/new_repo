@@ -1,0 +1,112 @@
+.form-class {
+  margin: 2PX;
+}
+
+.th-class {
+  padding: 10px;
+}
+
+body>table {
+  width: 80%;
+}
+
+.main_table {
+  border-collapse: collapse;
+  width: 600px;
+  margin-left: 260px;
+  background-image: url(./assets/images/iStock-1024926532.jpg);
+
+}
+
+table.list {
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even),
+table.list thead>tr {
+  background-color: #dddddd;
+}
+
+input[type=text],
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #ddd;
+  color: #000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form div.form-action-buttons {
+  text-align: right;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0000ee;
+  margin-right: 4px;
+}
+
+label.validation-error {
+  color: red;
+  margin-left: 5px;
+}
+
+label {
+  color: bisque
+}
+
+.hide {
+  display: none;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 991px) {
+  .collapse {
+    display: inline;
+  }
+}
+
+body {
+  background-color: aquamarine;
+}
+
+.logo a {
+  max-width: cover;
+  height: 100%;
+}
+
+.logo img {
+  height: 55px;
+  width: 55px;
+  margin: 2px 10px;
+}
+
+main {
+  align-items: center;
+}
