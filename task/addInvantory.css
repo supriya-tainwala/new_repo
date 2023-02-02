@@ -12,9 +12,11 @@ body>table {
 
 .main_table {
   border-collapse: collapse;
-  width: 600px;
-  margin-left: 260px;
-  background-image: url(./assets/images/iStock-1024926532.jpg);
+  width: 800px;
+  margin-left: 160px;
+  /* background-image: url(./assets/images/iStock-1024926532.jpg); */
+  background-color: #000;
+  color: #ccc;
 
 }
 
@@ -93,7 +95,7 @@ label {
 }
 
 body {
-  background-color: aquamarine;
+  background-color: #d1c4b0;
 }
 
 .logo a {
@@ -123,4 +125,43 @@ main {
 
 height: 420px;
 width: 100%;
+}
+
+.explore{
+  position: absolute;
+  top: 339px;
+  left: 486px;
+  height: 45px;
+  width:86px;
+  border-radius: 25%;
+  background-color: #000000;
+  color: #f8f8f8;
+}
+
+.explore:hover{
+  color: #000;
+  background-color: #ccc;
+}
+
+.div_content{
+  height:65px;
+  /* border: 1px solid red; */
+  /* align-items: center;
+  justify-content: center; */
+ 
+  
+}
+.para{
+  font-size: x-large;
+  font-weight: 300;
+  align-items: center;
+  /* border: 1px solid red; */
+  
+  
+}
+
+
+.submit_btn:hover{
+      background-color: hsl(0, 0%, 1%);
+      color: #ccc;
 }
