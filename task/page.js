@@ -17,14 +17,14 @@ function validate() {
     var password = document.getElementById("pass")
     var Username = document.getElementById("user");
     if (password.value === "12345678" && Username.value == "admin") {
-        alert("login is seccesfull");
+        document.querySelector("#success").innerHTML="Login Successful"
         sessionStorage.setItem("key",1234)
 
         window.location.replace("addInvantory.html");
         return false;
     }
     else {
-        alert("login failed")
+        document.querySelector("#warning").innerHTML="Login Fail"
     }
 }
 
