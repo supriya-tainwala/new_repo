@@ -46,6 +46,30 @@ cd ls -l
 cat <file name which you want to read>
 ```
 
+**9.** Want to make a new file the command need to be entered
 
+```terminal
+touch <file name which you want create>
+```
 
+**10.** if you want to push this file to your project than need to add it to stagging area this can be done by following command
+
+```terminal
+git add <file name>
+```
+
+**11.** Than you need to commit the file.
+```terminal
+git commit -m "added a new file to project." 
+```
+
+**12.** Than you need to commit the file.
+```terminal
+git commit -m "added a new file to project." 
+```
+
+**13.** Than finally push command is entered 
+```terminal
+git push origin master  
+```
 
