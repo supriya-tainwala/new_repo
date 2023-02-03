@@ -89,3 +89,13 @@ logout.onclick = ()=>{
         location.replace("./login.html");
         
 }
+
+
+var myclassName = "foo";
+$(function(){
+
+        $("#myContent").addClass(myclassName);
+
+
+
+});
