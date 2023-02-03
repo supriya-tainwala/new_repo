@@ -13,7 +13,7 @@ mkdir <new directory name which you want to creat for your repo>
 **3.** Enter the directory where you have to clone your repo by using the command.
 
 ```terminal
-cd clone_directory
+cd <directory name>
 ```
 
 **4.** You can clone this repo by using the following command.
@@ -25,7 +25,7 @@ git clone https://github.com/supriya-tainwala/new_repo.git
 **5.** After the cloning process you can navigate your repo by using the following command.
 
 ```ternimal
-cd image/gallery 
+cd <directory name> 
 ```
 
 **6.** After that you can navigate this further by seeing the list of all the files which are present inside the directory.
